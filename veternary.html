@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petcare</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body class="vet">
+
+    <section class="vet" id="vet">
+        <header>
+
+            <a href="#" class="logo">VETERINARY </a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="Navigation">
+                <li><a href="/">HOME </a></li>
+                <!-- adoption-->
+                <li>
+                    <div class="navbar">
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="adoption.html">ADOPTION </a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="adoption.html#adopt">ADOPT</a>
+                                <a href="adoption.html#postadopt">POST FOR ADOPTION</a>
+                            </div>
+                        </div>
+                </li>
+                <!--supplies-->
+                <li>
+                    <div class="navbar">
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="supplies.html">SUPPLIES </a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="supplies.html#dogcare">DOG CARE</a>
+                                <a href="supplies.html#catcare">CAT CARE</a>
+                                <a href="supplies.html#birdcare">BIRD CARE</a>
+                                <a href="supplies.html#fishcare">FISH CARE</a>
+                                <a href="supplies.html#miscellaneous">MISCELLANEOUS PRODUCTS</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- veterinary-->
+                <li>
+                    <div class="navbar">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="veternary.html">VETERINARY </a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <!-- lost and found-->
+                <li>
+                    <div class="navbar">
+
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <a href="lost-and-found.html">LOST & FOUND </a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="lost-and-found.html#emergency#">HELPLINE</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </header>
+
+
+
+
+
+        <div class="contact-wrap">
+            <div class="contact-in">
+                <h1>Schedule Appointment</h1>
+                <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+                <p>123-000-799</p>
+                <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+                <p>Petcare@gmail.com</p>
+                <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+                <p>Pune,India</p>
+                <ul>
+                    <li><a href="https://facebook.com"><img src="images/fb.png" height="30" alt="fb" ><i class="fa fa-facebook" ></i></a></li>
+                    <li><a href="https://x.com"><img src="images/x.png" height="33" alt="twitter" ></a></li>
+                    <li><a href="https://youtube.com"><img src="images/yt.png" height="30" alt="youtube" ></a></li>
+                    <li><a href="https://instram.com"><img src="images/ig.png" height="30" alt="instram" ></a></li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="contact-in">
+                <h1>Send a Message</h1>
+                <form action="thanku.html" onsubmit="myFunction()">
+                    <input type="text" placeholder="Full Name" class="contact-in-input">
+                    <input type="text" placeholder="Email" class="contact-in-input">
+                    <input type="text" placeholder="Subject" class="contact-in-input">
+                    <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+                    <input type="submit" value="SUBMIT" class="contact-in-btn">
+                </form>
+            </div>
+           
+        </div>
+
+    </section>
+
+    <script>
+        function myFunction() {
+            alert("The form was submitted");
+        }
+    </script>
+</body>
+
+</html>

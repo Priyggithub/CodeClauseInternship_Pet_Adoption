@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petcare</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Petcare </a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="Navigation">
+            <li><a href="/">HOME </a></li>
+            <!-- adoption-->
+            <li>
+                <div class="navbar">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="adoption.html">ADOPTION </a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="adoption.html#adopt">ADOPT</a>
+                            <a href="adoption.html#postadopt">POST FOR ADOPTION</a>
+                        </div>
+                    </div>
+            </li>
+            <!--supplies-->
+            <li>
+                <div class="navbar">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="supplies.html">SUPPLIES </a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="supplies.html#dogcare">DOG CARE</a>
+                            <a href="supplies.html#catcare">CAT CARE</a>
+                            <a href="supplies.html#birdcare">BIRD CARE</a>
+                            <a href="supplies.html#fishcare">FISH CARE</a>
+                            <a href="supplies.html#miscellaneous">MISCELLANEOUS PRODUCTS</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- veterinary-->
+            <li>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="veternary.html">VETERINARY </a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <!-- lost and found-->
+            <li>
+                <div class="navbar">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="lost-and-found.html">LOST & FOUND </a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+
+                            <a href="lost-and-found.html#emergency">HELPLINE</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </header>
+
+
+
+    <section class="banner" id="banner">
+        <!--parralax for home page 1 start-->
+        <div class="box50">
+            <div class="Content" id="getmiddle">
+
+            </div>
+    </section>
+
+    <!-- About Us Part Of The Code Starts Here-->
+
+    <!-- About Us Part Of The Code Ends Here-->
+    </div>
+
+    <!--Blog Part Of The Program Starts Here-->
+    <center>
+        <h3> WE ARE HERE TO HELP YOU </h3>
+        <p>
+            <br>Saving one animal won’t change the world, but it will change the world for that one animal.
+
+
+        </p>
+        <h3><a href="adoption.html" class="btn">ADOPT NOW!</a></h3>
+
+    </center>
+    <!--parralax for home page 2 start-->
+    <div class="box60">
+
+
+
+
+
+
+
+
+        <!-- Contact Part Of The Code starts Here-->
+        <div id="index">
+            <section class="contact">
+                <div class="title">
+                    <h2 class="titleText">CONTACT US</h2>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact-in">
+                        <form action="thanku.html" onsubmit="myFunction()">
+                            <input type="text" placeholder="Full Name" class="contact-in-input">
+                            <input type="text" placeholder="Email" class="contact-in-input">
+                            <input type="text" placeholder="Subject" class="contact-in-input">
+                            <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+                            <input type="submit" value="SUBMIT" class="contact-in-btn">
+                        </form>
+                    </div>
+
+                </div>
+        </div>
+
+        </section>
+        <!-- Contact Part Of The Code ends Here-->
+    </div>
+    <!--parralax for home page 2 ends-->
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const Navigation = document.querySelector('.Navigation');
+            menuToggle.classList.toggle('active');
+            Navigation.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            alert("The form was submitted");
+        }
+    </script>
+
+
+    <footer>
+
+        <div style="color: brown;"><b>Report Animal Abuse</b></div>
+        <div class="smalltext">
+            If your area lacks the proper animal welfare service and your local authorities are not well equipped to
+            deal with <b>animal cruelty</b> cases, you can also contact us.<br> You can also contact <a
+                href="http://www.awbi.in/">Animal Welfare Board of India</a> or Ministry of Environment, Forest and
+            Climate Change.
+        </div>
+    </footer>
+</body>
+
+</html>
