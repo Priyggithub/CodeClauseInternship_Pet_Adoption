@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: url("/images/group.png");*/
+    background: url("/images/group.png");
     background-size: cover;
     background-position: center;
 }
